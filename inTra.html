@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Freelancer - Start Bootstrap Theme</title>
+
+    <!-- Custom fonts for this theme -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase navbar-static-top navbar-inverse" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">HSBC EVOLVE</a>
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <button onclick="myFunction()" class="btn btn-outline-success my-2 my-sm-0" type="submit"
+                            id="utbButton">UTB - Universal Transaction Banking</button>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <button onclick="login()" class="btn btn-outline-danger my-2 my-sm-0"
+                            type="submit">Login</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase navbar-inverse" id="hideMe">
+        <div class="container">
+            <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a> -->
+            <button
+                class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+                type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="inTra.html">Initiate
+                            Transaction {IT}</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Bank IT</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Evolve FX</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">PTP portal</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">My Research</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">My reports</a>
+                    </li>
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">My access</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <h3>Three equal columns</h3>
+    <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
+    <div class="row">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div> -->
+
+    <!-- About Section -->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+
+            <!-- About Section Heading -->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Initiate Transaction</h2>
+
+            <!-- Icon Divider -->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon">
+                    <i class="fas fa-star"></i>
+                </div>
+                <div class="divider-custom-line"></div>
+            </div>
+
+            <!-- About Section Content -->
+            <div class="row">
+                <div class="col-lg-4 ml-auto">
+                    <p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download
+                        includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS
+                        stylesheets for easy customization.</p>
+
+                    <div class="dropdown show">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Single Transaction
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#formhere" onclick="loadform()">Fill Form</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
+                        dividers, and add your email address to the contact form to make it fully functional!</p>
+                    <button type="button" class="btn btn-danger">Bulk Transaction Upload</button>
+                </div>
+                <div class="col-lg-4 mr-auto">
+                    <p class="lead">You can create your own custom avatar for the masthead, change the icon in the
+                        dividers, and add your email address to the contact form to make it fully functional!</p>
+                    <button type="button" class="btn btn-danger">ERP Upload</button>
+                </div>
+            </div>
+
+            <!-- About Section Button -->
+            <!-- <div class="text-center mt-4">
+            <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/themes/freelancer/">
+              <i class="fas fa-download mr-2"></i>
+              Free Download!
+            </a>
+          </div> -->
+
+        </div>
+    </section>
+
+    <section class="footer text-center" id="formhere" style="display:none">
+        <div class="container">
+            <div class="row">
+                <form>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Beneficiary Name</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Beneficiary Name">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Beneficiary Account</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputEmail3"
+                                placeholder="Beneficiary Account">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">IFSC Code</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputEmail3" placeholder="IFSC Code">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Swift Code</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputEmail3" placeholder="Swift Code">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Swift Code</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputEmail3" placeholder="Swift Code">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Routing Instructions</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Currency</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputEmail3" placeholder="Currency">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Debit Account</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="inputEmail3" placeholder="Debit Account">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Document Upload</label>
+                        <div class="col-sm-10">
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-10">
+                            <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="tabs" class="project-tab">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                                role="tab" aria-controls="nav-home" aria-selected="true"> New </a>
+                            <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                                role="tab" aria-controls="nav-profile" aria-selected="false">Processing</a>
+                            <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact"
+                                role="tab" aria-controls="nav-contact" aria-selected="false">Completed</a>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <table class="table" cellspacing="0" style="color: #ffff">
+                                <thead>
+                                    <tr>
+                                        <th>Transaction Number</th>
+                                        <th>Status</th>
+                                        <th>Transaction Good(Yes / No)</th>
+                                        <th class="hideyescolumn"> Update Txn Status </th>
+                                        <th class="hidenocolumn"> Update Comments </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Transaction 1</a></td>
+                                        <td>
+                                            <select class="browser-default custom-select">
+                                                <option selected>Select Department</option>
+                                                <option value="1">Finance</option>
+                                                <option value="2">Tech IT</option>
+                                                <option value="3">Something else here</option>
+                                            </select>
+
+                                        </td>
+                                        <td>
+                                            <div class="dropdown show">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Back End
+                                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        onclick="showyescolumn()">Yes</button>
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        onclick="shownocolumn()">No</button>
+                                                </div>
+                                            </div>
+
+                                        <td class="hideyescolumn" style="color: #ffff">
+                                            <label><input class="radio-inline" type="radio" name="optradio"
+                                                    checked>existing contract</label>
+                                            <label><input class="radio-inline" type="radio" name="optradio">New
+                                                rate</label>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                        </td>
+
+                                        <td class="hidenocolumn" style="color: #ffff">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Add Comments"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary"
+                                                        type="button">Submit</button>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="loadform()" href="#formhere">Re-fill Form</button>
+                                                </div>
+                                            </div>
+                                        </td>
+
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Transaction 2</a></td>
+                                        <td>
+                                            <select class="browser-default custom-select">
+                                                <option selected>Select Department</option>
+                                                <option value="1">Finance</option>
+                                                <option value="2">Tech IT</option>
+                                                <option value="3">Something else here</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown show">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Back End
+                                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        onclick="showyescolumn()">Yes</button>
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        onclick="shownocolumn()">No</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="hideyescolumn" style="color: #ffff">
+                                            <label><input class="radio-inline" type="radio" name="optradio"
+                                                    checked>existing contract</label>
+                                            <label><input class="radio-inline" type="radio" name="optradio">New
+                                                rate</label>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                        </td>
+                                        <td class="hidenocolumn" style="color: #ffff">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Add Comments"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary"
+                                                        type="button">Submit</button>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="loadform()" href="#formhere">Re-fill Form</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Transaction 3</a></td>
+                                        <td>
+                                            <select class="browser-default custom-select">
+                                                <option selected>Select Department</option>
+                                                <option value="1">Finance</option>
+                                                <option value="2">Tech IT</option>
+                                                <option value="3">Something else here</option>
+                                            </select>
+                                        </td>
+                                        <td>
+                                            <div class="dropdown show">
+                                                <a class="btn btn-secondary dropdown-toggle" href="#" role="button"
+                                                    id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="false">
+                                                    Back End
+                                                </a>
+
+                                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        onclick="showyescolumn()">Yes</button>
+                                                    <button type="button" class="dropdown-item btn btn-primary"
+                                                        onclick="shownocolumn()">No</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="hideyescolumn" style="color: #ffff">
+                                            <label><input class="radio-inline" type="radio" name="optradio"
+                                                    checked>existing contract</label>
+                                            <label><input class="radio-inline" type="radio" name="optradio">New
+                                                rate</label>
+                                            <button type="button" class="btn btn-primary">Submit</button>
+                                        </td>
+                                        <td class="hidenocolumn" style="color: #ffff">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="Add Comments"
+                                                    aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary"
+                                                        type="button">Submit</button>
+                                                    <button class="btn btn-outline-secondary" type="button"
+                                                        onclick="loadform()" href="#formhere">Re-fill Form</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <table class="table" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Project Name</th>
+                                        <th>Employer</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Work 1</a></td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Work 2</a></td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Work 3</a></td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <table class="table" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th>Contest Name</th>
+                                        <th>Date</th>
+                                        <th>Award Position</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Work 1</a></td>
+                                        <td>Doe</td>
+                                        <td>john@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Work 2</a></td>
+                                        <td>Moe</td>
+                                        <td>mary@example.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Work 3</a></td>
+                                        <td>Dooley</td>
+                                        <td>july@example.com</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+
+                <!-- Footer Location -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">2215 John Daniel Drive
+                        <br>Clark, MO 65243</p>
+                </div>
+
+                <!-- Footer Social Icons -->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Around the Web</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-facebook-f"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-twitter"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-linkedin-in"></i>
+                    </a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="#">
+                        <i class="fab fa-fw fa-dribbble"></i>
+                    </a>
+                </div>
+
+                <!-- Footer About Text -->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                    <p class="lead mb-0">Freelance is a free to use, MIT licensed Bootstrap theme created by
+                        <a href="http://startbootstrap.com">Start Bootstrap</a>.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Copyright Section -->
+    <section class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; Your Website 2019</small>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-to-top d-lg-none position-fixed ">
+        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+    
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/freelancer.min.js"></script>
+
+    <script>
+
+            function loadform() {
+                var x = document.getElementById("formhere");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+    
+            // for (let el of document.querySelectorAll('.appBanner')) el.style.visibility = 'hidden';
+    
+            function showyescolumn() {
+                console.log("cmr Yes");
+    
+                // $(".table .hideyescolumn").toggleClass("in");
+                // console.log("shye");
+                // var column = "table .hideyescolumn".toggle("in");
+    
+                // for (let el of document.querySelectorAll('.hideyescolumn')) el.style.visibility = 'visible';
+                var x = document.getElementsByClassName("hideyescolumn");
+                for (var i = 0; i < x.length; i++) {
+                    if (x[i].style.display === "none") {
+                        x[i].style.display = "table-cell";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+                }
+            }
+    
+            function shownocolumn() {
+                console.log("cmr No");
+                var x = document.getElementsByClassName("hidenocolumn");
+                for (var i = 0; i < x.length; i++) {
+                    if (x[i].style.display === "none") {
+                        x[i].style.display = "table-cell";
+                    } else {
+                        x[i].style.display = "none";
+                    }
+                }
+            }
+    
+        </script>
+    
+
+
+
+</body>
